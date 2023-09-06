@@ -1,0 +1,68 @@
+* {
+  font-size: 60px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+.main-container {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(31, 31, 31);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-container .turn {
+  background-color: rgb(53, 53, 53);
+  padding: 10px 40px;
+  border-radius: 55px;
+  cursor: default;
+  color: whitesmoke;
+}
+.main-container .game-pad {
+  border: 15px solid rgb(53, 53, 53);
+  cursor: default;
+  border-radius: 55px;
+  height: 600px;
+  width: 700px;
+  margin: 20px 0;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+}
+.main-container .game-pad .box {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+.main-container .game-pad .box:hover {
+  background-color: rgb(53, 53, 53);
+  opacity: 0.5;
+}
+.main-container .reset button {
+  background-color: purple;
+  font-size: 50px;
+  outline: none;
+  border: none;
+  border-radius: 55px;
+  padding: 5px 25px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.main-container .reset button:hover {
+  background-color: rgb(53, 53, 53);
+}/*# sourceMappingURL=style.css.map */

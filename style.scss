@@ -1,0 +1,74 @@
+$rad: 55px;
+$bg-color: rgb(31, 31, 31);
+$main-color: rgb(53, 53, 53);
+
+* {
+  font-size: 60px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+.main-container {
+  height: 100%;
+  width: 100%;
+  background-color: $bg-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .turn {
+    background-color: $main-color;
+    padding: 10px 40px;
+    border-radius: $rad;
+    cursor: default;
+    color: whitesmoke;
+  }
+  .game-pad {
+    border: 15px solid $main-color;
+    cursor: default;
+    border-radius: $rad;
+    height: 600px;
+    width: 700px;
+    margin: 20px 0;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    .box {
+      height: 100%;
+      width: 100%;
+      border: 1px solid black;
+      background-color: yellow;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 100px;
+      &:hover {
+        background-color: $main-color;
+        opacity: 0.5;
+      }
+    }
+  }
+  .reset {
+    button {
+      background-color: purple;
+      font-size: 50px;
+      outline: none;
+      border: none;
+      border-radius: $rad;
+      padding: 5px 25px;
+      transition: 0.3s;
+      cursor: pointer;
+      &:hover {
+        background-color: $main-color;
+      }
+    }
+  }
+}
